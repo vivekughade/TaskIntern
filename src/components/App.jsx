@@ -8,12 +8,12 @@ import Signup from './Signup';
 import "./style.css"
 const App = () => {
     const [state, setState] = useState({token:localStorage.getItem('auth-token')})
-    console.log("toekn : ",state)
+    console.log("token : ",state)
     return (
         <>
 {   state.token?    
         <Switch>
-            <Route  path="/home" component={Home}/>
+            <Route  exact path="/home" component={Home}/>
             <Route render={()=><Redirect to='/home' />} />
         </Switch>
     :
