@@ -14,13 +14,13 @@ const App = () => {
 {   state.token?    
         <Switch>
             <Route   path="/home" component={Home}/>
-            <Route render={()=><Redirect to='/home' />} />
+            
         </Switch>
     :
     <Switch>
             <Route exact path="/" component={Login}/>
             <Route   path="/signup" component={Signup}/>
-            <Route render={()=><Redirect to='/' />} />
+           
     </Switch>
 
 }
