@@ -1,5 +1,6 @@
-import React,{useState} from 'react';
+import React,{Switch,Route,useState} from 'react';
 import Bar from "./Bar";
+import Home from "./Home.jsx";
 import { Redirect, useHistory } from 'react-router-dom';
 const Login = () => {
     const initialState = {
@@ -40,7 +41,11 @@ const submithandler = (e) =>{
                     isLoggedIn:true
             }))
             localStorage.setItem("auth-token",token)
-         <Redirect to="/home" />
+       <Router>
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                </Switch>
+            </Router>
         }
         else{
             setState(s=>({
