@@ -8,13 +8,7 @@ const Home = () => {
             if(token){
                 localStorage.clear()
             }
-            window.location.href = '/';
-                          
-
-   
-
-
-          
+         return  <Redirect to="/" />
     }
     return (
         <React.Fragment>
