@@ -41,11 +41,12 @@ const submithandler = (e) =>{
                     isLoggedIn:true
             }))
             localStorage.setItem("auth-token",token)
+            return(<>
        <Router>
                 <Switch>
                     <Route exact path="/" component={Home} />
                 </Switch>
-            </Router>
+            </Router></>)
         }
         else{
             setState(s=>({
