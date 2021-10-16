@@ -1,4 +1,4 @@
-
+label,input{display:block}
     .box{
         display:flex;
         flex-wrap: wrap;
