@@ -7,7 +7,7 @@ label,input{display:block}
     }
 .container{
     
-    height: min-content;
+    height: 80vh;
     width:min-content;
     background-color: white;
     line-height: 30px;
