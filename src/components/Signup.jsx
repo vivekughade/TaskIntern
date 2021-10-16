@@ -12,17 +12,17 @@ const Signup = () => {
         <div className="container">
         <Bar/>
             <form>
-                <label for="name">Full Name</label>
+                <label for="name">Full Name</label></br>
                 <input type="text" value=""/></br>
-                <label for="email">Email</label>
+                <label for="email">Email</label></br>
                 <input type="email" value=""/></br>
-                <label for="number">Mobile Number</label>
+                <label for="number">Mobile Number</label></br>
                 <input type="number" value=""/></br>
-                <label for="Gender">Gender</label>
+                <label for="Gender">Gender</label></br>
                 <input type="text" value=""/></br>
-                <label for="password">Password</label>
+                <label for="password">Password</label></br>
                 <input type="password" value=""/></br>
-                <label for="password">Password</label>
+                <label for="password">Password</label></br>
                 <input type="password" value=""/></br>
                 <button>Register</button>
                 <div className="f2">
