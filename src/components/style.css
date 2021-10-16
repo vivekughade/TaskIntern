@@ -67,6 +67,9 @@ display:block;}
     @media (min-width:360px) {
 
         .box{
+             display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
             font-size: xx-large;
         }
         .f2{
@@ -98,6 +101,9 @@ display:block;}
     @media (min-width:547px) {
 
         .box{
+             display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
             font-size: xx-large;
         }
         .f2{
